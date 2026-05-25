@@ -1,0 +1,29 @@
+name: 3M-BSIP
+channels:
+  - dglteam/label/th24_cu121
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy=1.26
+  - scipy=1.14
+  - pandas=2.2
+  - matplotlib=3.9
+  - biopython=1.78
+  - networkx=3.3
+  - scikit-image=0.20
+  - tqdm=4.66
+  - transformers=4.46
+  - tokenizers=0.20
+  - dgl=2.4
+  - pyyaml=6.0
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - torchdata==0.7.1
+      - scikit-learn==1.7.0
+      - MDAnalysis==2.9.0
+      - pykeops==2.3
+      - shutup==0.2.0
+      - accelerate==1.3.0
